@@ -1,5 +1,12 @@
 # Kafka
 
+## Curso gratuito de kafka en
+
+ * Apache Kafka: https://jarroba.com/apache-kafka/
+ * Instalar Apache Kafka: https://jarroba.com/instalar-apache-kafka/
+ * Consumidores y Productores de Apache Kafka con Java y Python: https://jarroba.com/consumidores-y-productores-de-apache-kafka-con-java-y-python/
+ * Clúster Apache Kafka tolerante a fallos y alta disponibilidad: https://jarroba.com/cluster-apache-kafka-tolerante-a-fallos-y-alta-disponibilidad/
+
 
 ## Contiene
 
