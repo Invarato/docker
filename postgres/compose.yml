@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+
+  # ---------------------------
+  postgres:
+    image: postgres:16.1
+    container_name: postgres-container
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: db
+    networks:
+      - postgres-network
+    volumes:
+      - postgres-data:/var/lib/postgresql
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  adminerdb:
+    image: adminer:4.8.1
+    container_name: adminerdb-container
+    restart: always
+    depends_on:
+      - postgres
+    ports:
+      - "8090:8080"
+    networks :
+      - postgres-network
+  # ---------------------------
+
+
+networks:
+  postgres-network:
+
+volumes:
+  postgres-data:

@@ -14,6 +14,7 @@ Está todo en una red: `zookeeper-network`
 
 Los datos del broker se guardan en el volumen: `kafkabroker-data`
 
+Carpeta [connectors](connectors) con los conectores para el kafka connect
 
 ## Iniciar
 Con las variables de [.env](.env)
@@ -39,7 +40,7 @@ docker-compose up
  * Kafka Connect: http://localhost:8083/
  * Schema Registry: http://localhost:8085/
 
-Boostrap Service: 127.0.0.1:9092
+ * Boostrap Servers: 127.0.0.1:9092
 
 ## Probar
 
