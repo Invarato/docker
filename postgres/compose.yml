@@ -4,7 +4,7 @@ services:
 
   # ---------------------------
   postgres:
-    image: postgres:16.1
+    image: postgres:${POSTGRES_VERSION}
     container_name: postgres-container
     restart: always
     ports:
@@ -20,7 +20,7 @@ services:
       - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
 
   adminerdb:
-    image: adminer:4.8.1
+    image: adminer:${ADMINERDB_VERSION}
     container_name: adminerdb-container
     restart: always
     depends_on:

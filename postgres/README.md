@@ -1,4 +1,4 @@
-# Kafka
+# Postgres
 
 
 ## Contiene
@@ -22,11 +22,8 @@ docker-compose up
 
 O especificando las variables:
 ````shell
-export ZOOKEEPER_VERSION=3.9.2
-export CONFLUENTINC_KAFKA_VERSION=7.6.0
-export KAFKA_UI_VERSION=v0.7.1
-export CONFLUENTINC_KAFKACAT_VERSION=7.1.11
-export CONFLUENTINC_KAFKACAT_TOPIC=topic-ejemplo
+export POSTGRES_VERSION=16.1
+export ADMINERDB_VERSION=4.8.1
 
 docker-compose up
 ````
