@@ -11,7 +11,7 @@ Está todo en una red: `postgres-network`
 
 Los datos de la base de datos se guardan en el volumen: `postgres-data`
 
-Fichero de inicialización fácil de la base de datos en [init.sql](scripts%2Finit.sql)scripts/init.sql
+Fichero de inicialización fácil de la base de datos en [init.sql](scripts%2Finit.sql)
 
 
 ## Iniciar
