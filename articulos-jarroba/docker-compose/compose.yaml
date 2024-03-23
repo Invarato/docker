@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+
+  mysql:
+    image: mysql:8.3
+    container_name: miMySQL-container
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: true
+    volumes:
+      - MiVolumenDocker:/var/lib/mysql
+
+volumes:
+  MiVolumenDocker:
