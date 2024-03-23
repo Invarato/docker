@@ -2,19 +2,9 @@
 
 Del artículo https://jarroba.com/docker-compose-en-un-proyecto/
 
-Levantar [compose.yml](compose.yml):
+Levantar [compose.yml](compose.yaml):
 ````shell
 docker compose up
-````
-
-Entrar en la terminal del contenedor:
-````shell
-docker exec -it miMySQL-container /bin/bash
-````
-
-Ejecutar SQL:
-````shell
-mysql
 ````
 
 Al terminar:

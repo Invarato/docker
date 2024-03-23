@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+
+  mi-jupyter:
+    build: .
+    image: mi-jupyter-image:1.0
+    container_name: mi-jupyter-notebook-container
+    ports:
+      - "8888:8888"
+    volumes:
+      - mi-jupyter-data:/usr/src/app
+
+volumes:
+  mi-jupyter-data:
