@@ -2,8 +2,7 @@
 
 Del artículo https://jarroba.com/dockerfile-directivas-y-dockerizar-proyectos/
 
-Construir [Dockerfile](Dockerfile) con:
-
+Construir [Dockerfile](Dockerfile):
 ````shell
 docker build -t mi-imagen .
 ````

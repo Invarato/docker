@@ -1,8 +1,8 @@
 # Ejemplo básico de Docker compose
 
-Del artículo https://jarroba.com/docker-compose/
+Del artículo https://jarroba.com/docker-compose-en-un-proyecto/
 
-Levantar [compose.yaml](compose.yaml):
+Levantar [compose.yml](compose.yml):
 ````shell
 docker compose up
 ````

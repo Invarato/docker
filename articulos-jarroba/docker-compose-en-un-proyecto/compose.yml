@@ -1,0 +1,45 @@
+version: '3.8'
+
+
+services:
+
+  bd:
+    image: mysql:8.3.0
+    container_name: miMySQL-container
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: contrseniaroot
+      MYSQL_USER: usuariobd
+      MYSQL_PASSWORD: contraseniabd
+      MYSQL_DATABASE: mibd
+    volumes:
+      - bd-data:/var/lib/mysql
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  adminer:
+    image: adminer:4.8.1
+    container_name: adminer-container
+    restart: always
+    depends_on:
+      - bd
+    ports:
+      - '8081:8080'
+
+  web:
+    image: php:8-apache
+    container_name: php_web-container
+    restart: always
+    depends_on:
+      - bd
+    ports:
+      - "8000:80"
+    volumes:
+      - ./www:/var/www/html
+    command: bash -c "docker-php-ext-install mysqli && apache2-foreground"
+
+volumes:
+  bd-data:
+
+
