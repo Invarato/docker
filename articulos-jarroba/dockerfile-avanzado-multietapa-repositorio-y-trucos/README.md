@@ -1,4 +1,4 @@
-# Ejemplo básico de Docker compose
+# Ejemplo de docker avanzado y repositorio
 
 Del artículo https://jarroba.com/dockerfile-avanzado-multietapa-repositorio-y-trucos/
 

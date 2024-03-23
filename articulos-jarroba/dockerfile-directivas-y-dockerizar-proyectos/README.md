@@ -1,4 +1,4 @@
-# Ejemplo básico de Docker compose
+# Ejemplo directivas docker y dockerizar proyectos
 
 Del artículo https://jarroba.com/dockerfile-directivas-y-dockerizar-proyectos/
 

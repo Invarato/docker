@@ -1,4 +1,4 @@
-# Ejemplo básico de Docker compose
+# Ejemplo de Docker Compose en un proyecto
 
 Del artículo https://jarroba.com/docker-compose-en-un-proyecto/
 
