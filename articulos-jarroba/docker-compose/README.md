@@ -8,12 +8,12 @@ Levantar [compose.yaml](compose.yaml) con:
 docker compose up
 ````
 
-Entrar en la terminal del contenedor con:
+Entrar en la terminal del contenedor:
 ````shell
 docker exec -it miMySQL-container /bin/bash
 ````
 
-Ejecutar SQL con:
+Ejecutar SQL:
 ````shell
 mysql
 ````
